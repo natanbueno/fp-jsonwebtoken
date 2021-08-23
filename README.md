@@ -12,7 +12,7 @@ fp-jsonwebtoken não é um <strong>[Framework, Componente]</strong>, é apenas u
 - [Freepascal](https://www.freepascal.org/)
 - [DCPcrypt](https://wiki.freepascal.org/DCPcrypt)
 
-## ✨ Algoritmos para assinatura do <strong>Compact Token</strong>
+## ✨ Algoritmos para assinatura do <strong>compact token</strong>
 | _Algorithms_ | _Supported_ | 
 | -------------| ----------- |
 |  `HS256`     | ✔️         |
@@ -26,7 +26,7 @@ fp-jsonwebtoken não é um <strong>[Framework, Componente]</strong>, é apenas u
 |  `ES512`     | ❌         |
 |  `ES256K`    | ❌         |
 
-## 🔖 Pequeno exemplo do fluxo de um Token JWT.
+## 🔖 Fluxo de um JSON Web Token
 <img height="320" src="https://github.com/natanbueno/fp-jsonwebtoken/blob/main/img/fluxoJWT.png?raw=true" alt="Fluxo JSONWEBTOKEN" />
 
 
