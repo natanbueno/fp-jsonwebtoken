@@ -7,7 +7,6 @@
       <Unit0>
         <Filename Value="sample.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="5" Y="16"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
@@ -19,10 +18,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmMain"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="153"/>
-        <CursorPos X="36" Y="99"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="37" Y="121"/>
         <UsageCount Value="62"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="../src/fp.jwt.claims.pas"/>
@@ -73,17 +75,17 @@
         <UsageCount Value="47"/>
       </Unit7>
       <Unit8>
-        <Filename Value="../src/fp.jwt.valid.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos Y="2"/>
-        <UsageCount Value="20"/>
-      </Unit8>
-      <Unit9>
         <Filename Value="../src/fp.jwt.core.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="76" Y="38"/>
         <UsageCount Value="22"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../src/fp.jwt.valid.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="20"/>
       </Unit9>
       <Unit10>
         <Filename Value="../src/fp.jwt.base.pas"/>

@@ -118,7 +118,7 @@ begin
   FJWT := TJWT.Create;
 
   //Payload
-  FJWT.Claims.Issuer     := 'iGrampy Soluções';
+  FJWT.Claims.Issuer     := FISSUER;
   FJWT.Claims.Expiration := Now - 1;
   // Add custom
   FJWT.Claims.SetClaim('userId', 1);
