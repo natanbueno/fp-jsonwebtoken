@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="22">
+      <Unit0>
+        <Filename Value="sample.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="5" Y="16"/>
+        <UsageCount Value="62"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ufrmmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmMain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="153"/>
+        <CursorPos X="36" Y="99"/>
+        <UsageCount Value="62"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../src/fp.jwt.claims.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="11" Y="16"/>
+        <UsageCount Value="61"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../src/fp.jwt.header.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos X="17" Y="29"/>
+        <UsageCount Value="60"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../src/fp.jwt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="34" Y="30"/>
+        <UsageCount Value="54"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../src/fp.jwt.sign.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="10" Y="50"/>
+        <UsageCount Value="52"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../src/fp.jwt.utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos X="20" Y="21"/>
+        <UsageCount Value="51"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../src/fp.jwt.verify.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="76"/>
+        <CursorPos Y="117"/>
+        <UsageCount Value="47"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../src/fp.jwt.valid.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="20"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../src/fp.jwt.core.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="76" Y="38"/>
+        <UsageCount Value="22"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../src/fp.jwt.base.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="13"/>
+        <UsageCount Value="18"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../src/fp.jsonwebtoken.core.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="18"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="704"/>
+        <CursorPos X="21" Y="705"/>
+        <UsageCount Value="7"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../src/fp.jwt.interfaces.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="4" Y="10"/>
+        <UsageCount Value="18"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/fpcsrc/rtl/objpas/sysutils/sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="19" Y="112"/>
+        <UsageCount Value="8"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2900"/>
+        <CursorPos Y="2913"/>
+        <UsageCount Value="8"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/fpcsrc/packages/fcl-base/src/base64.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="65"/>
+        <CursorPos X="39" Y="71"/>
+        <UsageCount Value="11"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../src/common/fp.encoding.base64.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="7" Y="14"/>
+        <UsageCount Value="23"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/rtl-objpas/src/inc/strutils.pp"/>
+        <UnitName Value="StrUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="41" Y="80"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../../lazarus/laz32/fpcsrc/rtl/objpas/types.pp"/>
+        <UnitName Value="Types"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11" Y="15"/>
+        <UsageCount Value="9"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="83" Y="33"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/rtl-objpas/src/inc/dateutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="412"/>
+        <CursorPos Y="424"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
