@@ -101,6 +101,7 @@ begin
         end;
       end;
     end;
+    FreeAndNil(jPayload);
   end;
 end;
 
