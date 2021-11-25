@@ -7,6 +7,7 @@ interface
 uses
   Classes,
   SysUtils,
+  Types,
   Generics.Collections;
 
 type
@@ -43,7 +44,7 @@ type
 
   TJWTClaims = class
   private
-    FAudience     : String;
+    FAudience     : TStringDynArray;
     FExpiration   : TDateTime;
     FHasIssuedAt  : Boolean;
     FIssuedAt     : TDateTime;
@@ -56,25 +57,26 @@ type
                         const AValue: Variant;
                         const AType : TClaimPublicType
                        );
+    procedure SetExpiration(const AValue: TDateTime);
+    procedure SetIssuedAt  (const AValue: TDateTime);
 
-    procedure SetExpiration(const Value: TDateTime);
-    procedure SetIssuedAt  (const Value: TDateTime);
   public
     constructor Create;
     destructor Destroy(); override;
 
-    procedure SetClaim(const AName: String; const AValue: String   ); overload;
-    procedure SetClaim(const AName: String; const AValue: Integer  ); overload;
-    procedure SetClaim(const AName: String; const AValue: Double   ); overload;
-    procedure SetClaim(const AName: String; const AValue: Boolean  ); overload;
-    procedure SetClaim(const AName: String; const AValue: TDateTime); overload;
-    procedure SetClaim(const AName: String; const AValue: Variant  ); overload;
+    procedure SetClaim   (const AName: String; const AValue: String   ); overload;
+    procedure SetClaim   (const AName: String; const AValue: Integer  ); overload;
+    procedure SetClaim   (const AName: String; const AValue: Double   ); overload;
+    procedure SetClaim   (const AName: String; const AValue: Boolean  ); overload;
+    procedure SetClaim   (const AName: String; const AValue: TDateTime); overload;
+    procedure SetClaim   (const AName: String; const AValue: Variant  ); overload;
+    procedure AddAudience(const aValue: String);
 
-    property Subject      : string    read FSubject    write FSubject;
-    property Issuer       : string    read FIssuer     write FIssuer;
-    property Expiration   : TDateTime read FExpiration write SetExpiration;
-    property IssuedAt     : TDateTime read FIssuedAt   write SetIssuedAt;
-    property Audience     : String    read FAudience   write FAudience;
+    property Subject      : string            read FSubject    write FSubject;
+    property Issuer       : string            read FIssuer     write FIssuer;
+    property Expiration   : TDateTime         read FExpiration write SetExpiration;
+    property IssuedAt     : TDateTime         read FIssuedAt   write SetIssuedAt;
+    property Audience     : TStringDynArray   read FAudience;
     property AsPublic     : TListClaimsPublic read FClaimsPublic;
 
     property HasExpiration: Boolean   read FHasExpiration;
@@ -138,16 +140,16 @@ begin
   FClaimsPublic.Add(Claim);
 end;
 
-procedure TJWTClaims.SetExpiration(const Value: TDateTime);
+procedure TJWTClaims.SetExpiration(const AValue: TDateTime);
 begin
   FHasExpiration := true;
-  FExpiration    := Value;
+  FExpiration    := AValue;
 end;
 
-procedure TJWTClaims.SetIssuedAt(const Value: TDateTime);
+procedure TJWTClaims.SetIssuedAt(const AValue: TDateTime);
 begin
   FHasIssuedAt := true;
-  FIssuedAt    := Value;
+  FIssuedAt    := AValue;
 end;
 
 procedure TJWTClaims.SetClaim(const AName: String; const AValue: String);
@@ -180,6 +182,21 @@ begin
   AddClaim(AName, AValue, claimPublicNumber);
 end;
 
+procedure TJWTClaims.AddAudience(const aValue: String);
+var
+  Increment: Integer;
+  Position : Integer;
+begin
+  if aValue <> '' then
+  begin
+    Increment := Length(FAudience) + 1;
+    SetLength(FAudience, Increment);
+
+    Position            := High(FAudience);
+    FAudience[Position] := aValue;
+  end;
+end;
+
 function TJWTClaims.HasSubject: Boolean;
 begin
   Result := FSubject <> '';
@@ -192,7 +209,7 @@ end;
 
 function TJWTClaims.HasAudience: Boolean;
 begin
-  Result := FAudience <> '';
+  Result := Length(FAudience) > 0;
 end;
 
 function TJWTClaims.HashPublic: Boolean;
