@@ -68,3 +68,7 @@ lib/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+samples/LogLeakMemory.txt
+
+
