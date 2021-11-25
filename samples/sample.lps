@@ -7,8 +7,8 @@
       <Unit0>
         <Filename Value="sample.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="5" Y="16"/>
-        <UsageCount Value="62"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -20,19 +20,20 @@
         <UnitName Value="uFrmMain"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="99"/>
-        <CursorPos X="37" Y="121"/>
-        <UsageCount Value="62"/>
+        <TopLine Value="156"/>
+        <CursorPos X="14" Y="167"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="../src/fp.jwt.claims.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="8"/>
-        <CursorPos X="11" Y="16"/>
-        <UsageCount Value="61"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="54"/>
+        <CursorPos X="26" Y="59"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="../src/fp.jwt.header.pas"/>
@@ -40,23 +41,24 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="17" Y="29"/>
-        <UsageCount Value="60"/>
+        <UsageCount Value="63"/>
       </Unit3>
       <Unit4>
         <Filename Value="../src/fp.jwt.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="29"/>
-        <CursorPos X="34" Y="30"/>
-        <UsageCount Value="54"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="12"/>
+        <CursorPos X="14" Y="29"/>
+        <UsageCount Value="57"/>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="../src/fp.jwt.sign.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="51"/>
-        <CursorPos X="10" Y="50"/>
-        <UsageCount Value="52"/>
+        <TopLine Value="79"/>
+        <CursorPos X="28" Y="126"/>
+        <UsageCount Value="55"/>
       </Unit5>
       <Unit6>
         <Filename Value="../src/fp.jwt.utils.pas"/>
@@ -64,22 +66,22 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="20" Y="21"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="54"/>
       </Unit6>
       <Unit7>
         <Filename Value="../src/fp.jwt.verify.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="76"/>
-        <CursorPos Y="117"/>
-        <UsageCount Value="47"/>
+        <TopLine Value="45"/>
+        <CursorPos X="11" Y="100"/>
+        <UsageCount Value="50"/>
       </Unit7>
       <Unit8>
         <Filename Value="../src/fp.jwt.core.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="76" Y="38"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="25"/>
       </Unit8>
       <Unit9>
         <Filename Value="../src/fp.jwt.valid.pas"/>
@@ -149,16 +151,19 @@
       <Unit19>
         <Filename Value="../../../../lazarus/laz32/fpcsrc/rtl/objpas/types.pp"/>
         <UnitName Value="Types"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11" Y="15"/>
-        <UsageCount Value="9"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="50"/>
+        <CursorPos X="3" Y="66"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit19>
       <Unit20>
         <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="16"/>
-        <CursorPos X="83" Y="33"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="607"/>
+        <CursorPos X="14" Y="624"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit20>
       <Unit21>
         <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/rtl-objpas/src/inc/dateutil.inc"/>
@@ -168,7 +173,84 @@
         <UsageCount Value="10"/>
       </Unit21>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="19" HistoryIndex="18">
+      <Position1>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="123" Column="16" TopLine="108"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="123" Column="12" TopLine="102"/>
+      </Position2>
+      <Position3>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="14"/>
+      </Position3>
+      <Position4>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="15"/>
+      </Position4>
+      <Position5>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="16"/>
+      </Position5>
+      <Position6>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="126" Column="6" TopLine="102"/>
+      </Position7>
+      <Position8>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="114" Column="29" TopLine="88"/>
+      </Position8>
+      <Position9>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="127" TopLine="98"/>
+      </Position9>
+      <Position10>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="14"/>
+      </Position10>
+      <Position11>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="15"/>
+      </Position11>
+      <Position12>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="16"/>
+      </Position12>
+      <Position13>
+        <Filename Value="sample.lpr"/>
+        <Caret Line="17"/>
+      </Position13>
+      <Position14>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="123" TopLine="98"/>
+      </Position14>
+      <Position15>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="125" Column="32" TopLine="98"/>
+      </Position15>
+      <Position16>
+        <Filename Value="../../../../lazarus/laz32/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
+        <Caret Line="754" Column="14" TopLine="738"/>
+      </Position16>
+      <Position17>
+        <Filename Value="../src/fp.jwt.pas"/>
+        <Caret Line="29" Column="14" TopLine="12"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../src/fp.jwt.claims.pas"/>
+        <Caret Line="145" TopLine="143"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../src/fp.jwt.claims.pas"/>
+        <Caret Line="59" Column="26" TopLine="54"/>
+      </Position19>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>

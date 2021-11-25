@@ -118,8 +118,12 @@ begin
   FJWT := TJWT.Create;
 
   //Payload
-  FJWT.Claims.Issuer     := FISSUER;
-  FJWT.Claims.Expiration := Now - 1;
+  FJWT.Claims.Issuer      := FISSUER;
+  FJWT.Claims.Expiration  := Now - 1;
+  FJWT.Claims.AddAudience('Aud1');
+  FJWT.Claims.AddAudience('Aud2');
+
+
   // Add custom
   FJWT.Claims.SetClaim('userId', 1);
 
@@ -146,7 +150,7 @@ begin
     if FJWT.Verified then
       Memo1.Lines.Add('Is valid token.')
     else
-      Memo1.Lines.Add('Not a valid token.')
+      Memo1.Lines.Add('Not a valid token.');
 
   except
     ON E: Exception do
@@ -159,6 +163,8 @@ begin
 end;
 
 procedure TFrmMain.ValidateToken;
+var
+  I: Integer;
 begin
   //Simple example of how we can validate the token.
   Memo1.Lines.Clear;
@@ -174,6 +180,14 @@ begin
     Memo1.Lines.Add('Token not Verified!');
     exit;
   end;
+
+  //Get Audiences
+  if FJWT.Claims.HasAudience then
+  begin
+    for I := 0 to Length(FJWT.Claims.Audience) -1 do
+      Memo1.Lines.Add('Audience: '+ FJWT.Claims.Audience[I]);
+  end;
+
 
   if (FJWT.Claims.HasExpiration) and (FJWT.Claims.Expiration < Now) then
     Memo1.Lines.Add('Your token is expired.');
