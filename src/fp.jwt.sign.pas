@@ -93,6 +93,7 @@ var
   LPayLoad   : TJSONObject;
   LClaimName : String;
   LClaimValue: Variant;
+  LAudiences : TJSONArray;
   I: Integer;
 begin
   LPayLoad := TJSONObject.Create;
@@ -100,11 +101,20 @@ begin
 
     with FJWT.Claims do
     begin
-      if HasSubject    then LPayLoad.Add(TClaimPrivate.AUDIENCE  , Audience  );
+      if HasSubject    then LPayLoad.Add(TClaimPrivate.Subject   , Subject   );
       if HasIssuer     then LPayLoad.Add(TClaimPrivate.ISSUER    , Issuer    );
       if HasExpiration then LPayLoad.Add(TClaimPrivate.EXPIRATION, DateTimeToUnix(Expiration));
       if HasIssuedAt   then LPayLoad.Add(TClaimPrivate.ISSUED_AT , DateTimeToUnix(IssuedAt  ));
-      if HasAudience   then LPayLoad.Add(TClaimPrivate.AUDIENCE  , Audience  );
+
+      if HasAudience then
+      begin
+        LAudiences := TJSONArray.Create;
+
+        for I := 0 to Length(Audience) -1 do
+          LAudiences.Add(Audience[I]);
+
+        LPayLoad.Add(TClaimPrivate.AUDIENCE , LAudiences);
+      end;
 
       if HashPublic then
       begin

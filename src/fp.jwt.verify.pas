@@ -72,7 +72,8 @@ var
   LPayLoadDecoded: String;
   field_name     : String;
   field_typ      : TJSONtype;
-  I: Integer;
+  LAudiences     : TJSONArray;
+  I,J: Integer;
 begin
   LPayLoadDecoded := TJWTUtils.DecodeBase64Url(FParts[1]);
 
@@ -89,7 +90,13 @@ begin
       else if (field_name = 'iss') then AJWT.Claims.Issuer     := jPayload.Strings['iss']
       else if (field_name = 'exp') then AJWT.Claims.Expiration := UnixToDateTime(jPayload.Integers['exp'])
       else if (field_name = 'iat') then AJWT.Claims.IssuedAt   := UnixToDateTime(jPayload.Integers['iat'])
-      else if (field_name = 'aud') then AJWT.Claims.Audience   := jPayload.Strings['aud']
+      else if (field_name = 'aud') then
+      begin
+        LAudiences  := jPayload.Arrays['aud'];
+
+        for J := 0 to LAudiences.Count -1 do
+          AJWT.Claims.AddAudience(LAudiences.Strings[J]);
+      end
       else
       begin
         field_typ  := jPayload.Items[I].JSONType;
